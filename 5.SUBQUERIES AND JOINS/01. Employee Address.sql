@@ -1,4 +1,4 @@
-SELECT [EmployeeID], [JobTitle],E.[AddressId],A.AddressText
+SELECT Top(5) [EmployeeId], [JobTitle],E.[AddressId],A.AddressText
 	FROM [EMPLOYEES] AS E
 		JOIN [ADDRESSES] AS A
 		ON E.[AddressID] = A.[AddressID]
